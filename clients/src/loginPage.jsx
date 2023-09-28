@@ -22,7 +22,7 @@ export default function LoginPage() {
     useEffect(() => {
         if(isSuccess) {
             localStorage.setItem('user', JSON.stringify(data))
-                navigate('/dashboard');
+                navigate('/admin');
         }
     }, [isSuccess]);
 

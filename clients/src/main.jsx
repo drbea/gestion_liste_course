@@ -10,20 +10,21 @@ import { Store } from "./store.js";
 import { Provider } from 'react-redux';
 import LoginPage from "./loginPage.jsx"
 import DashBoard from './components/dashBoard.jsx';
+import Admin from './routes/admin.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
     element: <LoginPage />,
     children: [
       {
-        path: "dashboard",
+        path: "/components",
         element: <DashBoard />,
       },
     ],
   },
   {
-    path: "/",
-    element: <DashBoard />,
+    path: "/admin",
+    element: <Admin />,
   }
 ]);
 ReactDOM.createRoot(document.getElementById('root')).render(
