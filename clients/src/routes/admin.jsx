@@ -7,7 +7,11 @@ export default function Admin() {
             <Sidebar />
         </div>
         <div>
-            page
+            creer une liste
+            <form>
+                <input type="text" placeholder="ajouter un nom de liste" />
+                <button>creer</button>
+            </form>
         </div>
     </div>
   )
