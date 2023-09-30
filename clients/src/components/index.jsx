@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
-import DisplayList from "./listeCourse";
+/* import DisplayList from "./listeCourse"; */
 
 function MenuItem({ title, link, children, currentPath, setCurrentPath }) {
   const active = currentPath === link;
