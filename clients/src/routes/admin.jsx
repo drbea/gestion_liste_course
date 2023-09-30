@@ -1,8 +1,11 @@
 //import React from 'react';
 import { Link } from 'react-router-dom'
 import Sidebar from "../components/"
+// import Liste from '/routes/ajouteliste.js'
+import ManageLists from "../components/gestionListe"
 
 export default function Admin() {
+  
   return (
     <div className="flex">
         <div className="w-56 min-h-screen bg-gray-700">
@@ -18,6 +21,10 @@ export default function Admin() {
         </div>
 
     {/*     //* Navigation  */}
+
+
+
+
         <nav>
           <ul className="flex space-x-4">
             <li>
@@ -43,13 +50,21 @@ export default function Admin() {
       </div>
       
     </header>
+    {/* stockage des listes sur la page */}
+    <body>
+         
     <div>
           <h2>Organisez vos courses de manière simple et efficace avec UserShopList</h2>
       </div>
+
+    </body>
         </div>
     </div>
   )
 }
+
+
+
 
 
 

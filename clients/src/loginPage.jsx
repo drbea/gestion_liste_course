@@ -65,9 +65,13 @@ export default function LoginPage() {
 
                     <button
                         type="submit"
-                        className={`bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ${isLoading ? 'bg-blue-200 cursor-not-allowed' : ''}`}
+                        className={`bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ${isLoading ? 'bg-blue-200 cursor-not-allowed' : ' '}`}
                     >
                         {isLoading ? 'Chargement...' : 'Se connecter'}
+                    </button>
+                   
+                    <button type="submit" className={`bg-blue-500 m-4 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ${isLoading ? 'bg-blue-200 cursor-not-allowed' : ''}`}>
+                    <Link to="/admin/registerPage" >Inscription</Link>
                     </button>
                 </form>
             </div>

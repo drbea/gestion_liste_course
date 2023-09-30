@@ -19,13 +19,9 @@ const router = createBrowserRouter([
         path: "/components",
         element: <registr />,
       },
-      {
-        path: "/components/gestionList",
-        element: <ManageLists />,
-      },
     ],
   },
-/*   { path: "./loginPage", element: <LoginPage /> }, */
+  /*   { path: "./loginPage", element: <LoginPage /> }, */
   {
     path: "/admin",
     element: <Admin />,
@@ -35,12 +31,14 @@ const router = createBrowserRouter([
         path: "./registerPage",
         element: <RegisterPage />,
       },
+      { path: "./gestionList", element: <ManageLists /> },
     ],
   },
   {
     path: "/admin/registerPage",
     element: <RegisterPage />,
   },
+  { path: "/admin/gestionList", element: <ManageLists /> },
 ]);
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
